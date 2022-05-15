@@ -1,0 +1,139 @@
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+:root {
+  --mainColor: #3730ba;
+  --mainFont: Elice Digital Baeum;
+}
+
+/* mixin */
+/* font-face */
+@font-face {
+  font-weight: normal;
+  font-family: 'Calibri';
+  src: url("../font/calibri-regular.ttf");
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 850px;
+}
+
+.cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1400px;
+  max-width: 1400px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 55px;
+}
+
+/* header */
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+header .cont {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header .sns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85px;
+}
+
+header .sns i {
+  color: #535353;
+  font-size: 2.5rem;
+}
+
+.gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gnb li {
+  padding: 0 12px;
+  font-size: 1.2rem;
+  font-family: var(--mainFont);
+  letter-spacing: 2px;
+}
+
+.gnb li a {
+  color: #404047;
+}
+
+/* footer */
+footer {
+  padding: 50px 0;
+  background: #232324;
+  color: white;
+}
+
+footer .cont {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+footer .cont > * {
+  line-height: 2.3;
+}
+
+footer strong {
+  margin-top: 25px;
+  color: #e8be00;
+  font-weight: 600;
+}
+
+footer .logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/*# sourceMappingURL=common.css.map */

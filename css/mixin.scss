@@ -1,0 +1,46 @@
+:root{
+    --mainColor: #3730ba;
+    --mainFont: Elice Digital Baeum;
+}    
+
+$contwidth: 1400px;   
+
+/* mixin */
+
+@mixin cont{
+    width: $contwidth;
+    max-width: $contwidth;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+
+@mixin clearfix{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+@mixin abs0{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin aftersty{
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+/* font-face */
+
+@font-face {
+    font-weight: normal;
+    font-family: 'Calibri';
+    src: url('../font/calibri-regular.ttf');
+    font-style: normal;
+}
+@import url(//font.elice.io/EliceDigitalBaeum.css);

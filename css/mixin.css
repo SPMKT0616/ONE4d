@@ -1,0 +1,15 @@
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+:root {
+  --mainColor: #3730ba;
+  --mainFont: Elice Digital Baeum;
+}
+
+/* mixin */
+/* font-face */
+@font-face {
+  font-weight: normal;
+  font-family: 'Calibri';
+  src: url("../font/calibri-regular.ttf");
+  font-style: normal;
+}
+/*# sourceMappingURL=mixin.css.map */
