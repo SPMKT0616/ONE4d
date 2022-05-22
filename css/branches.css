@@ -7,4 +7,8 @@
 
 /* mixin */
 /* font-face */
-/*# sourceMappingURL=mixin.css.map */
+.heading_box .bg_box {
+  background: url("/img/sub/bg4.jpg") no-repeat center;
+  background-size: cover;
+}
+/*# sourceMappingURL=branches.css.map */

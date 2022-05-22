@@ -33,7 +33,7 @@
             <h1 class="logo"><a href="index.html"><img src="img/common/ONE4d_LOGO.png" alt="ONE4d 로고"></a></h1>
             <nav>
                 <ul class="gnb">
-                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="About.html">ABOUT</a></li>
                     <li><a href="Business.html">BUSINESS</a></li>
                     <li><a href="Clients.html">CLIENTS</a></li>
@@ -177,54 +177,55 @@
         <div class="sec_btw">
             <div class="cont">
                 <span>contact ONE4d</span>
-                <a href="contact&apply.html">상담하기</a>
+                <a href="contact&apply.html">견적문의</a>
             </div>
         </div>
         <section class="sec06">
             <div class="cont">
+                <h3>위치</h3>
                 <div class="left_sec">
+                    <p>
 
+                    </p>
+                    <ul>
+                        <li>
+                            <P>상담시간</P>
+                        </li>
+                        <li>
+                            
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
                 </div>
                 <div class="right_sec">
-                    <!-- <div id="daumRoughmapContainer1646712480452" class="root_daum_roughmap root_daum_roughmap_landing"></div> -->
+                    <div id="daumRoughmapContainer1646712480452" class="root_daum_roughmap root_daum_roughmap_landing"></div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="cont">
-            <p>법인명 : (주)ONE4d ㅣ 대표자명 : 김원식 & 이진호<br>T : 051-791-0885 ㅣE : WSJH@ONE4d.kr</p>
-            <address>본사 : 부산광역시 남구 수영로 298, 산암빌딩 10층 ONE4d</address>
+            <p>법인명 : (주)ONE4d ㅣ 대표자명 : MR. James Lee<br>T : 051-791-0885 ㅣE : WSJH@ONE4d.kr</p>
+            <address>본사 : 서울특별시 중구 서소문로 89, 17층 (순화동, 순화빌딩)</address>
             <strong>© 2022 ONE4d. All Rights Reserved.</strong>
             <h2 class="logo"><img src="/img/common/ONE4d_LOGO2.png"></h2>
         </div>
     </footer>
 </div>
 <script>
-function chkMailFrm() {
- var mailForm = document.formmail;
+    AOS.init(); 
 
- if (!mailForm.title.value) {
-    alert("제목을 입력해주세요");
-    mailForm.title.focus();
-    return false;
- }
- if (!mailForm.senduser.value) {
-    alert("이름을 입력해주세요");
-    mailForm.senduser.focus();
-    return false;
- }
- if (!mailForm.phone.value){
-    alert("전화번호을 입력해주세요");
-    mailForm.phone.focus();
-    return false;
- }
- if (!mailForm.email.value) {
-    alert("이메일을 입력해주세요");
-    mailForm.email.focus();
-    return false;
- }
-}
+	new daum.roughmap.Lander({
+		"timestamp" : "1646712480452",
+		"key" : "29e7v",
+		// "mapWidth" : "400",
+		// "mapHeight" : "360"
+	}).render();
 </script>
 </body>
 </html>

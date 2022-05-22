@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300;500;700;900&display=swap");
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+:root {
+  --mainColor: #3730ba;
+  --mainFont: Elice Digital Baeum;
+}
+
+/* mixin */
+/* font-face */
+section .cont {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 100px;
+}
+
+section h4 {
+  position: relative;
+  font-size: 1.8rem;
+  margin: 80px 0;
+  letter-spacing: 2px;
+}
+
+.heading_box .bg_box {
+  background: url("/img/sub/bg1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.sec01 .cont {
+  text-align: center;
+}
+
+.sec01 .cont strong {
+  color: #4a4a4a;
+}
+
+.sec01 .cont p {
+  line-height: 1.5;
+  color: #666565;
+}
+
+.sec02 .cont strong {
+  color: #4a4a4a;
+}
+
+.sec02 .cont p {
+  line-height: 1.5;
+  color: #666565;
+}
+
+.sec02 h4 {
+  position: relative;
+  font-size: 1.8rem;
+  margin: 80px 0;
+  letter-spacing: 2px;
+}
+
+.sec02 > {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=about.css.map */

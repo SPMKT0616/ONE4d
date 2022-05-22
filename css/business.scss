@@ -1,0 +1,66 @@
+@import 'mixin';
+
+.heading_box{
+    .bg_box{
+        background: url('/img/sub/bg2.jpg') no-repeat center;
+        background-size: cover;
+    }
+}
+
+.sec01{
+    .cont{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    .tab_btn{
+        display: flex;
+        width: 80%;
+        li{
+            flex: 1;
+            border: 1px solid #ddd;
+            text-align: center;
+            white-space: nowrap;
+            a{
+                display: block;
+                font-size: 1.2rem;
+                font-family: '맑은 고딕';
+                line-height: 4;
+                background: white;
+            }
+        }
+        .active{
+            background: var(--mainColor);
+            color: white;
+        }
+    }
+    .tab_cont{
+        width: 100%;
+        >div{ display: none;}
+    }
+    .title_box{
+        padding: 100px 0;
+        text-align: center;
+        h4{ font-size: 3rem;}
+        p{ 
+            margin: 70px;
+            line-height: 2;;
+        }
+    }
+    .img_box{
+        display: flex;
+        justify-content: space-between;
+        >div{
+            width: 48%;
+            height: 280px;
+        }
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        p{
+            text-align: center;
+        }
+    }
+}

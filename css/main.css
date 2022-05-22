@@ -13,6 +13,15 @@
   font-style: normal;
 }
 
+section {
+  width: 100%;
+}
+
+section .cont {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
 section .text_box {
   position: relative;
 }
@@ -40,7 +49,6 @@ section .text_box p {
 h3 {
   color: var(--mainColor);
   font-size: 2rem;
-  font-family: var(--mainFont);
 }
 
 /* sec01 */
@@ -195,7 +203,7 @@ h3 {
 }
 
 .sec_btw .cont {
-  padding: 70px 0;
+  padding: 90px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -208,17 +216,26 @@ h3 {
 
 /* sec06 */
 .sec06 .cont {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .sec06 h3 {
   text-align: center;
   line-height: 1.5;
-  color: white;
+  color: #424242;
+  width: 100%;
+}
+
+.sec06 .left_sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=main.css.map */

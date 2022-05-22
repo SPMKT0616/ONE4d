@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300;500;700;900&display=swap");
 @import url(//font.elice.io/EliceDigitalBaeum.css);
 :root {
   --mainColor: #3730ba;
@@ -6,13 +7,6 @@
 
 /* mixin */
 /* font-face */
-@font-face {
-  font-weight: normal;
-  font-family: 'Calibri';
-  src: url("../font/calibri-regular.ttf");
-  font-style: normal;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -28,28 +22,54 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 850px;
+}
+
+h3 {
+  font-family: var(--mainFont);
+}
+
+.heading_box .cont {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.heading_box .bg_box {
+  width: 60%;
+  height: 200px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(10%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 10% rgba(255, 255, 255, 0.1) 20% rgba(255, 255, 255, 0.2) 30%);
+}
+
+.heading_box h3 {
+  letter-spacing: 2px;
+}
+
+.heading_box span {
+  font-weight: 300;
+  font-size: 1.5rem;
 }
 
 .cont {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1400px;
-  max-width: 1400px;
+  max-width: 1300px;
   padding-right: 10px;
   padding-left: 10px;
   margin: 0 auto;
 }
 
 .logo img {
-  height: 55px;
+  height: 45px;
 }
 
 /* header */
@@ -57,7 +77,9 @@ header {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: white;
+  -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .cont {
@@ -67,8 +89,8 @@ header .cont {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 header .sns {
@@ -101,6 +123,10 @@ header .sns i {
 
 .gnb li a {
   color: #404047;
+}
+
+.heading_box {
+  padding-top: 85px;
 }
 
 /* footer */

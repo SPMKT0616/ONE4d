@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300;500;700;900&display=swap");
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+:root {
+  --mainColor: #3730ba;
+  --mainFont: Elice Digital Baeum;
+}
+
+/* mixin */
+/* font-face */
+.heading_box .bg_box {
+  background: url("/img/sub/bg2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.sec01 .cont {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.sec01 .tab_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+
+.sec01 .tab_btn li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sec01 .tab_btn li a {
+  display: block;
+  font-size: 1.2rem;
+  font-family: '맑은 고딕';
+  line-height: 4;
+  background: white;
+}
+
+.sec01 .tab_btn .active {
+  background: var(--mainColor);
+  color: white;
+}
+
+.sec01 .tab_cont {
+  width: 100%;
+}
+
+.sec01 .tab_cont > div {
+  display: none;
+}
+
+.sec01 .title_box {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.sec01 .title_box h4 {
+  font-size: 3rem;
+}
+
+.sec01 .title_box p {
+  margin: 70px;
+  line-height: 2;
+}
+
+.sec01 .img_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sec01 .img_box > div {
+  width: 48%;
+  height: 280px;
+}
+
+.sec01 .img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sec01 .img_box p {
+  text-align: center;
+}
+/*# sourceMappingURL=business.css.map */

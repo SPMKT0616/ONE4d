@@ -1,10 +1,17 @@
 @import 'mixin';
 
-section .text_box{
-    position: relative;
-    p{ 
-        padding-top : 30px;
-        line-height: 1.5;
+section{
+    width: 100%;
+    .cont{
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    .text_box{
+        position: relative;
+        p{ 
+            padding-top : 30px;
+            line-height: 1.5;
+        }
     }
 }
 
@@ -23,7 +30,6 @@ section .text_box{
 h3{
     color: var(--mainColor); 
     font-size: 2rem; 
-    font-family: var(--mainFont);
 }
 
 /* sec01 */
@@ -52,7 +58,6 @@ h3{
             }
         }
     }
-
 }
 
 /* sec02 */
@@ -142,7 +147,7 @@ h3{
     font-family: var(--mainFont);
     letter-spacing: 2px;
     .cont{ 
-        padding: 70px 0;
+        padding: 90px 0;
         align-items: center;
     }
     a{
@@ -154,13 +159,16 @@ h3{
 /* sec06 */
 .sec06{
     .cont{
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
     }
     h3{ 
         text-align: center;
         line-height: 1.5;
-        color: white;
+        color: #424242;
+        width: 100%;
     }
-
+    .left_sec{
+        display: flex;
+        flex-direction: row;
+    }
 }

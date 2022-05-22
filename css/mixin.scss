@@ -3,12 +3,11 @@
     --mainFont: Elice Digital Baeum;
 }    
 
-$contwidth: 1400px;   
+$contwidth: 1300px;   
 
 /* mixin */
 
 @mixin cont{
-    width: $contwidth;
     max-width: $contwidth;
     padding-right: 10px;
     padding-left: 10px;
@@ -37,10 +36,6 @@ $contwidth: 1400px;
 
 /* font-face */
 
-@font-face {
-    font-weight: normal;
-    font-family: 'Calibri';
-    src: url('../font/calibri-regular.ttf');
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300;500;700;900&display=swap');
+
 @import url(//font.elice.io/EliceDigitalBaeum.css);
