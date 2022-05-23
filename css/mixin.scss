@@ -3,16 +3,7 @@
     --mainFont: Elice Digital Baeum;
 }    
 
-$contwidth: 1300px;   
-
 /* mixin */
-
-@mixin cont{
-    max-width: $contwidth;
-    padding-right: 10px;
-    padding-left: 10px;
-    margin: 0 auto;
-}
 
 @mixin clearfix{
     display: block;

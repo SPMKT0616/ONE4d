@@ -3,14 +3,14 @@
 section{
     .cont{
         flex-direction: column;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
-    h4{
-        position: relative;
-        font-size: 1.8rem;
-        margin: 80px 0;
-        letter-spacing: 2px;
-    }
+}
+h3{
+    margin: 80px 0;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .heading_box{
@@ -23,30 +23,80 @@ section{
 .sec01{
     .cont{
         text-align: center;
-        strong{ color:#4a4a4a;}
+        strong{ color:#454545;}
         p{
-            line-height: 1.5;
             color: #666565;
+            line-height: 1.5;
         }
     }
 }
 
 .sec02{
     .cont{
-        strong{ color:#4a4a4a;}
+        strong{ color:#454545;}
         p{
+            color: #6b6b6b;
             line-height: 1.5;
-            color: #666565;
+        }
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left{ 
+                width: 65%;
+                padding-right: 50px;
+            }
+            .right{ 
+                width: 35%;
+                img{ 
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
         }
     }
     h4{
         position: relative;
-        font-size: 1.8rem;
         margin: 80px 0;
+        font-size: 1.8rem;
         letter-spacing: 2px;
     }
-    >{
+}
+
+.sec03{
+    background: #eee;
+    .cont{ padding-top: 60px;}
+    ul{
         display: flex;
         justify-content: space-between;
+        width: 100%;
+    }  
+    li{
+        width: 18%;
+        color: #6b6b6b;
+        font-size: 0.9rem;
+        text-align: center;
+        strong{ color: black;}
+        p{ padding-bottom: 25px;}
+        img{
+            width: 70%;
+        }
+    }
+}
+
+.sec05{
+    ul{ width: 100%;}
+    li{
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+    .icon_wrap{ 
+        width: 40%;
+        background: #eee;
+    }
+    .text_wrap{
+        padding: 30px;
+        width: 60%
     }
 }

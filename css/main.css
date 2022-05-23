@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300;500;700;900&display=swap");
 @import url(//font.elice.io/EliceDigitalBaeum.css);
 :root {
   --mainColor: #3730ba;
@@ -6,13 +7,6 @@
 
 /* mixin */
 /* font-face */
-@font-face {
-  font-weight: normal;
-  font-family: 'Calibri';
-  src: url("../font/calibri-regular.ttf");
-  font-style: normal;
-}
-
 section {
   width: 100%;
 }
@@ -46,7 +40,7 @@ section .text_box p {
   color: #ffb81f;
 }
 
-h3 {
+h2 {
   color: var(--mainColor);
   font-size: 2rem;
 }
@@ -169,7 +163,7 @@ h3 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.sec04 h3 {
+.sec04 h2 {
   color: white;
 }
 
