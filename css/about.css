@@ -120,6 +120,40 @@ h3 {
   width: 70%;
 }
 
+.sec04 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.sec04 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  width: 50%;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+
+.sec04 li img {
+  width: 30%;
+}
+
+.sec04 li strong {
+  color: #292c8c;
+  font-size: 1.2rem;
+}
+
+.sec04 .text_wrap {
+  padding: 6%;
+}
+
 .sec05 ul {
   width: 100%;
 }
@@ -136,7 +170,7 @@ h3 {
 }
 
 .sec05 .text_wrap {
-  padding: 30px;
+  padding: 3%;
   width: 60%;
 }
 /*# sourceMappingURL=about.css.map */

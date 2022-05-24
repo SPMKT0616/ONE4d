@@ -78,10 +78,29 @@ h3{
         text-align: center;
         strong{ color: black;}
         p{ padding-bottom: 25px;}
-        img{
-            width: 70%;
+        img{ width: 70%;}
+    }
+}
+
+.sec04{
+    ul{ 
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    li{ 
+        display: flex;
+        flex: wrap;
+        width: 50%;
+        padding-right: 20px;
+        margin-bottom: 30px;
+        img{ width: 30%;}
+        strong{
+            color: #292c8c;
+            font-size: 1.2rem;
         }
     }
+    .text_wrap{ padding: 6%;}
 }
 
 .sec05{
@@ -96,7 +115,7 @@ h3{
         background: #eee;
     }
     .text_wrap{
-        padding: 30px;
+        padding: 3%;
         width: 60%
     }
 }

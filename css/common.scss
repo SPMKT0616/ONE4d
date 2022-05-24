@@ -41,10 +41,6 @@ h2{ font-family: var(--mainFont);}
     margin: 0 auto;
 }
 
-.logo img{
-    height: 30px;
-}
-
 
 /* header */
 header{
@@ -67,6 +63,9 @@ header{
             color: #535353; 
             font-size: 2rem;
         }
+    }
+    .logo img{
+        height: 30px;
     }
 }
 
@@ -105,5 +104,6 @@ footer{
         position: absolute;
         right: 0;
         bottom: 0;
+        img{ height: 50px;}
     }
 }
