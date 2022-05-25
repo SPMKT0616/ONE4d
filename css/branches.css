@@ -7,11 +7,6 @@
 
 /* mixin */
 /* font-face */
-.heading_box .bg_box {
-  background: url("/img/sub/bg4.jpg") no-repeat center;
-  background-size: cover;
-}
-
 h3 {
   margin: 80px 0;
   font-size: 1.8rem;

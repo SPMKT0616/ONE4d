@@ -13,12 +13,12 @@ h3{
     text-align: center;
 }
 
-.heading_box{
-    .bg_box{ 
-        background: url('/img/sub/bg1.jpg') no-repeat center;
-        background-size: cover;       
-    }
-}
+// .heading_box{
+//     .bg_box{ 
+//         background: url('/img/sub/bg1.jpg') no-repeat center;
+//         background-size: cover;       
+//     }
+// }
 
 .sec01{
     .cont{
@@ -104,18 +104,6 @@ h3{
 }
 
 .sec05{
-    ul{ width: 100%;}
-    li{
-        border: 1px solid #ddd;
-        margin-bottom: 20px;
-        line-height: 2;
-    }
-    .icon_wrap{ 
-        width: 40%;
-        background: #eee;
-    }
-    .text_wrap{
-        padding: 3%;
-        width: 60%
-    }
+    .cont{ padding-bottom: 150px;}
+    img{ width: 100%;}
 }
