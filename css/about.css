@@ -83,7 +83,8 @@ h3 {
 }
 
 .sec03 .cont {
-  padding-top: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .sec03 ul {
@@ -97,14 +98,15 @@ h3 {
 }
 
 .sec03 li {
-  width: 18%;
-  color: #6b6b6b;
+  width: 20%;
+  color: #454545;
   font-size: 0.9rem;
   text-align: center;
 }
 
 .sec03 li strong {
   color: black;
+  font-size: 1.1rem;
 }
 
 .sec03 li p {

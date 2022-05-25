@@ -11,21 +11,21 @@ section{
 h2{ font-family: var(--mainFont);}
 
 .heading_box{
-    .cont{ 
+    border-bottom: 1px solid #ddd;
+    .cont{
         padding-top: 50px;
         padding-bottom: 50px;
-    }
-    .bg_box{
-        width: 60%;
-        height: 150px;
+        justify-content: center;
     }
     h2{ 
-        font-size: 1.6rem;
+        font-size: 3rem;
         letter-spacing: 2px;
+        color: var(--mainColor);
     }
     span{
         font-weight: 300;
-        font-size: 1.5rem;
+        font-size: 2rem;
+        color: black;
     }
 }
 

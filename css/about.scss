@@ -13,13 +13,6 @@ h3{
     text-align: center;
 }
 
-// .heading_box{
-//     .bg_box{ 
-//         background: url('/img/sub/bg1.jpg') no-repeat center;
-//         background-size: cover;       
-//     }
-// }
-
 .sec01{
     .cont{
         text-align: center;
@@ -65,18 +58,24 @@ h3{
 
 .sec03{
     background: #eee;
-    .cont{ padding-top: 60px;}
+    .cont{ 
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
     ul{
         display: flex;
         justify-content: space-between;
         width: 100%;
     }  
     li{
-        width: 18%;
-        color: #6b6b6b;
+        width: 20%;
+        color: #454545;
         font-size: 0.9rem;
         text-align: center;
-        strong{ color: black;}
+        strong{ 
+            color: black;
+            font-size: 1.1rem;
+        }
         p{ padding-bottom: 25px;}
         img{ width: 70%;}
     }
