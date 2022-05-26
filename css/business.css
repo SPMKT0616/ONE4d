@@ -16,20 +16,19 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .sec01 .tab_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
+  width: 100%;
 }
 
 .sec01 .tab_btn li {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  width: calc(100% / 6);
   border: 1px solid #ddd;
   text-align: center;
   white-space: nowrap;
@@ -37,11 +36,11 @@
 
 .sec01 .tab_btn li a {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: '맑은 고딕';
   line-height: 4;
   background: white;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .sec01 .tab_btn .active {
@@ -58,7 +57,7 @@
 }
 
 .sec01 .title_box {
-  padding: 100px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -82,7 +81,7 @@
 
 .sec01 .img_box > div {
   width: 48%;
-  height: 280px;
+  height: 250px;
 }
 
 .sec01 .img_box img {
@@ -93,6 +92,7 @@
 }
 
 .sec01 .img_box p {
+  margin-top: 20px;
   text-align: center;
 }
 /*# sourceMappingURL=business.css.map */

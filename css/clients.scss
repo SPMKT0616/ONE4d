@@ -1,13 +1,6 @@
 @import 'mixin';
 
-// .heading_box{
-//     .bg_box{
-//         background: url('/img/sub/bg3.jpg') no-repeat center;
-//         background-size: cover;
-        
-//     }
-// }
-
+/* sec01 */
 .sec01{
     .cont{
         flex-direction: column;
@@ -20,28 +13,28 @@
     }
     h4{
         position: relative;
-        font-size: 1.8rem;
         margin: 80px 0;
+        font-size: 1.8rem;
         letter-spacing: 2px;
     }
     .NGO, .commercial{
-        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        position: relative;
         width: 100%;
         &:after{
-            @include aftersty;
-            width: 100%;
-            background: #ddd;
-            height: 2px;
             bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: #ddd;
+            @include aftersty;
         }
         li{ margin-bottom: 150px;;}
         .thumbnail{
+            overflow: hidden;
             width: 300px;
             height: 200px;
-            overflow: hidden;
             img{
                 width: 100%;
                 height: 100%;
@@ -53,9 +46,9 @@
             }
         }
         .thumbnail + p{
-            font-size: 1.2rem;
             padding-top: 30px;
             font-weight: 700;
+            font-size: 1.2rem;
             text-align: center;
         }
     }

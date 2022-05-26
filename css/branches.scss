@@ -1,12 +1,5 @@
 @import 'mixin';
 
-// .heading_box{
-//     .bg_box{
-//         background: url('/img/sub/bg4.jpg') no-repeat center;
-//         background-size: cover;
-        
-//     }
-// }
 
 h3{
     margin: 80px 0;
@@ -14,6 +7,7 @@ h3{
     letter-spacing: 2px;
 }
 
+/* sec01 */
 .sec01{
     .cont{
         display: flex;
@@ -26,7 +20,24 @@ h3{
     li{
         display: flex;
         padding: 30px;
-        margin-bottom: 15px;
+        margin-bottom: 40px;
         strong{ font-size: 1.2rem;}
+        img{
+            width: 40%;
+            height: 170px;
+            object-fit: cover;
+        }
+        .text_wrap{
+            position: relative;
+            width: 60%;
+            padding-left: 80px;
+            &:before{
+                left: 50px;
+                width: 4px;
+                height: 50%;
+                background: #6165f2;
+                @include aftersty;
+            }
+        }
     }
 }

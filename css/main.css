@@ -47,13 +47,13 @@ h2 {
 
 /* sec01 */
 .sec01 .main_slider {
+  overflow: hidden;
+  z-index: 0;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  overflow: hidden;
-  z-index: 0;
 }
 
 .sec01 .main_slider .slide {
@@ -62,23 +62,23 @@ h2 {
 }
 
 .sec01 .main_slider #slide01 {
-  background: red;
   left: 0;
+  background: red;
 }
 
 .sec01 .main_slider #slide02 {
-  background: green;
   left: 100%;
+  background: green;
 }
 
 .sec01 .main_slider #slide03 {
-  background: blue;
   left: 200%;
+  background: blue;
 }
 
 .sec01 .main_slider #slide04 {
-  background: yellow;
   left: 300%;
+  background: yellow;
 }
 
 /* sec02 */
@@ -87,13 +87,13 @@ h2 {
 }
 
 .sec02 .cont {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .sec02 .text_box {
@@ -114,18 +114,18 @@ h2 {
   position: relative;
   width: 23%;
   height: 270px;
-  font-family: var(--mainFont);
   border-radius: 15px;
   -webkit-box-shadow: 3px 3px 3px 1px #b3b3b3;
           box-shadow: 3px 3px 3px 1px #b3b3b3;
+  font-family: var(--mainFont);
 }
 
 .sec02 li img {
   width: 100%;
   height: 100%;
+  border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 15px;
 }
 
 .sec02 li p {
@@ -197,15 +197,15 @@ h2 {
 }
 
 .sec_btw .cont {
-  padding: 90px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 90px 0;
 }
 
 .sec_btw a {
-  font-size: 1.4rem;
   color: white;
+  font-size: 1.4rem;
 }
 
 /* sec06 */
@@ -214,22 +214,35 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.sec06 h3 {
-  text-align: center;
-  line-height: 1.5;
-  color: #424242;
-  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .sec06 .left_sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sec06 h2 {
+  line-height: 2;
+}
+
+.sec06 .right_sec {
+  width: 40%;
+  height: 500px;
+}
+
+.sec06 .right_sec .root_daum_roughmap {
+  width: 100%;
+  height: 100%;
+}
+
+.sec06 .right_sec .wrap_map {
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */

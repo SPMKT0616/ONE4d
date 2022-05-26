@@ -13,6 +13,7 @@ h3 {
   letter-spacing: 2px;
 }
 
+/* sec01 */
 .sec01 .cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,10 +34,33 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   padding: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
 }
 
 .sec01 li strong {
   font-size: 1.2rem;
+}
+
+.sec01 li img {
+  width: 40%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sec01 li .text_wrap {
+  position: relative;
+  width: 60%;
+  padding-left: 80px;
+}
+
+.sec01 li .text_wrap:before {
+  left: 50px;
+  width: 4px;
+  height: 50%;
+  background: #6165f2;
+  display: block;
+  position: absolute;
+  content: "";
 }
 /*# sourceMappingURL=branches.css.map */

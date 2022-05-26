@@ -24,7 +24,7 @@ section{
     background: var(--mainColor);
     color: white;;
     font-family: var(--mainFont);
-    &:hover{ color: #ffb81f}
+    &:hover{ color: #ffb81f;}
 }
 
 h2{
@@ -35,26 +35,26 @@ h2{
 /* sec01 */
 .sec01{
     .main_slider{
-        @include abs0;
         overflow: hidden;
         z-index: 0;
+        @include abs0;
         .slide{ width: 100%; height: 100%;}
         #slide{
-            &01{ 
+            &01{
+                left: 0; 
                 background: red;
-                left: 0;
             }
-            &02{ 
+            &02{
+                left: 100%; 
                 background: green;
-                left: 100%;
             }
-            &03{ 
+            &03{
+                left: 200%; 
                 background: blue;
-                left: 200%;
             }
-            &04{ 
+            &04{
+                left: 300%; 
                 background: yellow;
-                left: 300%;
             }
         }
     }
@@ -64,8 +64,8 @@ h2{
 .sec02{
     background: #f5f7fa;
     .cont{
-        justify-content: space-evenly;
         flex-direction: column;
+        justify-content: space-evenly;
     }
     .text_box{ text-align: center;}
     ul{
@@ -78,14 +78,14 @@ h2{
         position: relative;
         width: 23%;
         height: 270px;
-        font-family: var(--mainFont);
         border-radius: 15px;
         box-shadow: 3px 3px 3px 1px #b3b3b3;
+        font-family: var(--mainFont);
         img{
             width: 100%;
             height: 100%;
-            object-fit: cover;
             border-radius: 15px;
+            object-fit: cover;
         }
         p{
             position: absolute;
@@ -146,13 +146,13 @@ h2{
     font-size: 2rem;
     font-family: var(--mainFont);
     letter-spacing: 2px;
-    .cont{ 
+    .cont{
+        align-items: center; 
         padding: 90px 0;
-        align-items: center;
     }
     a{
-        font-size: 1.4rem;
         color: white;
+        font-size: 1.4rem;
     }
 }
 
@@ -160,15 +160,21 @@ h2{
 .sec06{
     .cont{
         flex-direction: row;
-    }
-    h3{ 
-        text-align: center;
-        line-height: 1.5;
-        color: #424242;
-        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .left_sec{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+    h2{ line-height: 2;}
+    .right_sec{
+        width: 40%;
+        height: 500px;
+        .root_daum_roughmap{
+            width: 100%;
+            height: 100%;
+        }
+        .wrap_map{ height: 100%;}
     }
 }

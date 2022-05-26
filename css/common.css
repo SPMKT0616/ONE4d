@@ -28,32 +28,33 @@ h2 {
   font-family: var(--mainFont);
 }
 
+/* heading_box */
 .heading_box {
+  padding-top: 85px;
   border-bottom: 1px solid #ddd;
 }
 
 .heading_box .cont {
-  padding-top: 50px;
-  padding-bottom: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .heading_box h2 {
+  color: var(--mainColor);
   font-size: 3rem;
   letter-spacing: 2px;
-  color: var(--mainColor);
 }
 
 .heading_box span {
+  color: black;
   font-weight: 300;
   font-size: 2rem;
-  color: black;
 }
 
 .cont {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,6 +66,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   max-width: 1200px;
   padding-right: 30px;
   padding-left: 30px;
@@ -126,10 +128,6 @@ header .logo img {
 
 .gnb li a {
   color: #404047;
-}
-
-.heading_box {
-  padding-top: 85px;
 }
 
 /* footer */
