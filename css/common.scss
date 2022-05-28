@@ -51,7 +51,9 @@ header{
     width: 100%;
     background: rgb(255,255,255);
     box-shadow: 1px 3px 10px rgba(0,0,0,0.1);
-    .cont{
+    nav{
+        width: 100%;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 15px;
@@ -60,6 +62,7 @@ header{
     .sns{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 70px;
         i{
             color: #535353; 
@@ -69,12 +72,21 @@ header{
     .logo img{
         height: 30px;
     }
+    .ham_btn{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        color: var(--mainColor);
+        font-size: 35px;
+    }
 }
 
 .gnb{
     display: flex;
+    justify-content: space-between;
     li{ 
-        padding: 0 12px;
+        padding: 12px;
         font-size: 1.1rem;
         font-family: var(--mainFont);
         letter-spacing: 2px;
@@ -101,8 +113,96 @@ footer{
     }
     .logo{
         position: absolute;
-        right: 0;
+        right: 10px;
         bottom: 0;
         img{ height: 50px;}
+    }
+}
+
+
+@media screen and (max-width: 960px){
+    header{
+        nav{
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .sns{
+            width: 60px;
+            i{font-size: 1.7rem;}
+        }
+        .logo img{ height: 25px;}
+    }
+    .gnb{
+        li{ font-size: 1rem;}
+    }
+}
+
+@media screen and (max-width: 760px){
+    section .cont h3{ margin: 60px 0;}
+    .cont{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .heading_box{
+        .cont{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        h2{ font-size: 2rem;}
+    }
+    header{
+        nav{ 
+            align-items: flex-start;
+            flex-direction: column;
+            .gnb{
+                display: none;
+                width: 100%;
+                align-items: center;
+                flex-direction: column;
+                li{ 
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .sns{ display: none;}
+            .ham_btn{ display: block;}
+        }
+        .gnb.active{
+            display: flex;
+        }
+    }
+    footer{
+        padding: 30px 0 70px 0;
+        .cont{
+            >*{
+                font-size: 0.8rem;
+                line-height: 2;}
+        }
+        .logo{
+            right: 10px;
+            bottom: -40px;
+            img{ height: 35px;}
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .cont{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .heading_box{
+        .cont{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        h2{ 
+            font-size: 1.5rem;
+            span{ font-size: 1.3rem;}
+        }
+    }
+    section .cont h3{ 
+        font-size: 1.4rem;
+        margin: 50px 0;
     }
 }

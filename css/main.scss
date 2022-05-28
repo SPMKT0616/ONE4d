@@ -15,6 +15,8 @@ section{
     }
 }
 
+section:not(.sec01, .sec02, .sec06){ height: 90vh}
+
 .more{
     position: absolute;
     right: 0;
@@ -34,11 +36,19 @@ h2{
 
 /* sec01 */
 .sec01{
+    position: relative;
+    height: 100vh;
     .main_slider{
         overflow: hidden;
         z-index: 0;
         @include abs0;
-        .slide{ width: 100%; height: 100%;}
+        // width: 100%;
+        .slide{
+            position: absolute;
+            width: 100%; 
+            height: 100%;
+            transition: transform 1s cubic-bezier(0.85, 0, 0.15, 1);
+        }
         #slide{
             &01{
                 left: 0; 
@@ -57,7 +67,20 @@ h2{
                 background: yellow;
             }
         }
+        #slide_radio01:checked ~ .slide {transform: translateX(0);}
+        #slide_radio02:checked ~ .slide {transform: translateX(-100%);}
+        #slide_radio03:checked ~ .slide {transform: translateX(-200%);}
+        #slide_radio04:checked ~ .slide {transform: translateX(-300%);}
     }
+    input{ display: none;}
+    .pagination{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5rem;
+        z-index: 1;
+    }
+
 }
 
 /* sec02 */
@@ -91,7 +114,7 @@ h2{
             position: absolute;
             bottom: 0;
             width: 100%;
-            padding: 10px 0;
+            line-height: 2.5;
             border-radius: 0 0 15px 15px;
             background: #403ab0;
             color: white;
@@ -104,11 +127,9 @@ h2{
 /* sec03 */
 .sec03{
     .text_box{
-        margin-right: auto;
+        padding-right: 30px;
     }
-    img{
-        width: 40%;
-    }
+    img{ width: 40%;}
 }
 
 /* sec04 */
@@ -116,7 +137,7 @@ h2{
     background: #4540c2;
     img{ width: 25%;}
     .text_box{
-        margin-left: auto;
+        padding-left: 30px;
         color: rgba(255,255,255,0.7);
 
     }
@@ -130,11 +151,9 @@ h2{
 /* sec05 */
 .sec05{
     img{ width: 25%;}
-    .cont{
-        align-items: center;
-    }
+    .cont{ align-items: center;}
     .text_box{
-        margin-right: auto;
+        padding-right: 30px;
     }
 
 }
@@ -143,12 +162,13 @@ h2{
 .sec_btw{
     background: #26262b;
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: var(--mainFont);
     letter-spacing: 2px;
     .cont{
-        align-items: center; 
-        padding: 90px 0;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 0;
     }
     a{
         color: white;
@@ -160,21 +180,161 @@ h2{
 .sec06{
     .cont{
         flex-direction: row;
+        align-items: flex-start;
         padding-top: 100px;
         padding-bottom: 100px;
     }
     .left_sec{
         display: flex;
         flex-direction: column;
-    }
-    h2{ line-height: 2;}
-    .right_sec{
-        width: 40%;
-        height: 500px;
-        .root_daum_roughmap{
-            width: 100%;
-            height: 100%;
+        justify-content: space-between;
+        width: 50%;
+        height: 100%;
+        padding-right: 50px;
+        ul{
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
-        .wrap_map{ height: 100%;}
+        li{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            height: 140px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            font-family: var(--mainFont);
+            p{ 
+                margin-top: 15px;
+                text-align: center;
+            }
+            &:nth-child(3){
+                background: var(--mainColor);
+                a{ 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    font-family: var(--mainFont);
+                    text-align: center;
+                }
+            }
+            &:last-child{
+                background: var(--mainColor);
+                a{ 
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    font-family: var(--mainFont);
+                    text-align: center;
+                }
+            }
+        }
     }
+    h2{ 
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+    .right_sec{
+        width: 50%;
+        .root_daum_roughmap{ width: 100%;}
+        .wrap_map{ height: 400px;}
+    }
+}
+
+
+
+@media screen and (max-width: 960px){
+    h2{ font-size: 1.5rem; }
+    .sec02{
+        li{
+            height: 200px;
+            p{ font-size: 1rem; }
+        }
+    }
+    .sec06{
+        .left_sec{
+            width: 100%;
+            li p{ font-size: 0.8rem;}
+        }
+        
+    }
+}
+
+@media screen and (max-width: 760px){
+    section .cont{ padding: 200px 15px;}
+    .sec02, .sec03, .sec04, .sec05{
+        .text_box{
+            h2{ font-size: 1.5rem; }
+            p br{ display: none;}
+        }
+    }
+    .sec02{
+        ul{ flex-wrap: wrap;}
+        li{ 
+            width: 43%;
+            height: 150px;
+            margin-bottom: 40px;
+        }
+    }
+    .sec03 img{ width: 35%;}
+    .sec04 img{ width: 30%;}
+    .sec05 img{ width: 30%;}
+    .sec_btw{
+        .cont{
+            padding: 30px 0;
+            font-size: 1.8rem;
+        }
+    }
+    .sec06{
+        .cont{
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .left_sec{
+            width: 100%;
+            padding: 0;
+            ul{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            li{ width: 48%;}
+        }
+        .right_sec{
+            width: 100%;
+            .wrap_map{ height: 250px;}
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .sec03, .sec04, .sec05{ height: 70vh}
+    section .cont{ padding: 150px 15px;}
+    .sec03, .sec04, .sec05{
+        img{ display: none;}
+        .text_box{ padding: 0;}
+    }
+    .sec02{
+        li p{ font-size: 0.9rem;}
+    } 
+    .more{
+        position: absolute;
+        bottom: -100px;
+        padding: 8px 15px;
+        font-size: 0.9rem;
+          
+    }
+
 }
