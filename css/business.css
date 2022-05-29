@@ -35,11 +35,11 @@
 
 .sec01 .tab_btn li a {
   display: block;
+  padding: 0 15px;
+  background: white;
   font-size: 1.1rem;
   font-family: var(--mainFont);
   line-height: 4;
-  background: white;
-  padding: 0 15px;
 }
 
 .sec01 .tab_btn .active {

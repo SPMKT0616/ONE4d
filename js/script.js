@@ -7,8 +7,12 @@ hamBtn.addEventListener('click', () =>{
     menu.classList.toggle('active');
 })
 
-let autoRun = setInterval(changeSlide, 5000);
+let autoRun = setInterval(changeSlide, 4000);
 
 function changeSlide(){
-    const radioBtns = [...document.querySelectorAll('.slide-radio')];
+    const radioBtns = [...document.querySelectorAll('.slide_radio')];
+    //console.log(radioBtns)
+    const currentIdx = radioBtns.findIndex((rb) => rb.checked);
+    // console.log(currentIdx);
+    radioBtns[(currentIdx + 1) % radioBtns.length].checked = true;
 }
