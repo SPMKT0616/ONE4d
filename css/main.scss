@@ -358,14 +358,12 @@ h2{
 @media screen and (max-width: 960px){
     h2{ font-size: 1.5rem; }
     .sec02{
-        li{
-            height: 200px;
+        li{ height: 200px;
             p{ font-size: 1rem; }
         }
     }
     .sec06{
-        .left_sec{
-            width: 100%;
+        .left_sec{ width: 100%;
             li p{ font-size: 0.8rem;}
         }
         
@@ -373,7 +371,10 @@ h2{
 }
 
 @media screen and (max-width: 760px){
-    section .cont{ padding: 200px 15px;}
+    section .cont{ 
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
     section:not(.sec01, .sec06){
         .text_box{
             h2{ font-size: 1.5rem; }
@@ -419,9 +420,12 @@ h2{
 }
 
 @media screen and (max-width: 480px){
-    .sec03, .sec04, .sec05{ height: 70vh;}
-    section .cont{ padding: 150px 15px;}
+    section .cont{ 
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
     .sec03, .sec04, .sec05{
+        height: 70vh;
         img{ display: none;}
         .text_box{ padding: 0;}
     }
@@ -433,7 +437,6 @@ h2{
         bottom: -100px;
         padding: 8px 15px;
         font-size: 0.9rem;
-          
     }
 
 }
