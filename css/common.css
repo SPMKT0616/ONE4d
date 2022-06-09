@@ -94,8 +94,8 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 header .sns {
@@ -120,7 +120,7 @@ header .logo img {
 header .ham_btn {
   display: none;
   position: absolute;
-  top: -3px;
+  top: 2px;
   right: 10px;
   color: var(--mainColor);
   font-size: 35px;
@@ -238,6 +238,10 @@ footer .logo img {
     width: 100%;
     padding: 8px;
     text-align: center;
+  }
+  header nav .gnb a {
+    display: block;
+    width: 100%;
   }
   header nav .sns {
     display: none;

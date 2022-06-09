@@ -56,8 +56,8 @@ header{
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .sns{
         display: flex;
@@ -74,7 +74,7 @@ header{
     .ham_btn{
         display: none;
         position: absolute;
-        top: -3px;
+        top: 2px;
         right: 10px;
         color: var(--mainColor);
         font-size: 35px;
@@ -157,6 +157,10 @@ footer{
                     width: 100%;
                     padding: 8px;
                     text-align: center;
+                }
+                a{ 
+                    display: block;
+                    width: 100%;
                 }
             }
             .sns{ display: none;}
