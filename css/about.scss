@@ -1,10 +1,8 @@
 @import 'mixin';
 
-section{
-    .cont{
-        flex-direction: column;
-        padding-bottom: 50px;
-    }
+section .cont{
+    flex-direction: column;
+    padding-bottom: 50px;
 }
 
 h3{
@@ -177,16 +175,12 @@ h3{
                 height: 170px;
             }
         }
-        .text_wrap{ 
-            padding: 7%;
-        }
+        .text_wrap{ padding: 7%;}
     }
 }
 
 @media screen and (max-width: 480px){
-    .bg_box{
-        height: 80px;
-    }
+    .bg_box{ height: 80px;}
     .sec02 .cont{ 
         padding-bottom: 30px;
         >div{
@@ -215,8 +209,6 @@ h3{
                 height: 130px;
             }
         }
-        .text_wrap{ 
-            padding: 4%;
-        }
+        .text_wrap{ padding: 4%;}
     }
 }

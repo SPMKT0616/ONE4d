@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Noto+Sans+KR:wght@300;500;700;900&display=swap");
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+:root {
+  --mainColor: #3730ba;
+  --mainFont: Elice Digital Baeum;
+}
+
+/* mixin */
+/* font-face */
+section .cont {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 50px;
+}
+
+section .cont ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+h3 {
+  margin: 80px 0;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+h4 {
+  margin: 60px 0;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* sec01 */
+.sec01 {
+  text-align: center;
+}
+
+/* sec02 */
+.sec02 .intro {
+  width: 70%;
+  padding: 20px;
+  background: #e3e3e3;
+  text-align: center;
+}
+
+.sec02 .intro p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+.sec02 .intro span:first-child {
+  color: #7988b8;
+}
+
+.sec02 .intro span:last-child {
+  color: #4c5573;
+}
+
+.sec02 strong {
+  color: #4e5057;
+}
+
+.sec02 h4 + p {
+  width: 70%;
+  padding: 20px;
+  background: #dce3fc;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.sec02 li {
+  width: 25%;
+  background: #e1ebf7;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.sec02 li p {
+  margin-top: 25px;
+}
+
+.sec02 img {
+  width: 40%;
+}
+
+/* sec03 */
+.sec03 ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.sec03 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sec03 li > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #dce3fc;
+  font-size: 1.2rem;
+  font-family: var(--mainFont);
+}
+
+.sec03 .text_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin-left: 30px;
+  border-bottom: 2px solid #9c9c9c;
+}
+
+/* sec04 */
+.sec04 {
+  background: #eee;
+  text-align: center;
+}
+
+.sec04 strong {
+  display: block;
+  padding: 25px 0;
+}
+
+.sec04 strong:first-child {
+  font-family: var(--mainFont);
+}
+
+.sec04 .thumbnail {
+  overflow: hidden;
+  width: 170px;
+  height: 170px;
+  border-radius: 70%;
+}
+
+.sec04 .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sec04 li strong:last-child {
+  line-height: 3;
+}
+
+.sec04 li p:last-child {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* sec05 */
+.sec05 .cont {
+  padding-bottom: 100px;
+}
+
+.sec05 ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sec05 li {
+  width: 46%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.sec05 P {
+  background: #adccf7;
+  font-family: var(--mainFont);
+  line-height: 2.5;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.sec05 .thumbnail {
+  height: 250px;
+}
+
+.sec05 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=partner.css.map */
