@@ -14,6 +14,7 @@ h3{
     margin: 80px 0;
     font-size: 1.8rem;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 h4{
@@ -53,11 +54,11 @@ h4{
 
     }
     li{
-        width: 25%;
+        width: 28%;
+        padding: 30px 15px;
         background: #e1ebf7;
-        text-align: center;
-        padding: 30px 0;
         font-size: 0.9rem;
+        text-align: center;
         p{ margin-top: 25px;}
     }
     img{width: 40%;}
@@ -91,6 +92,7 @@ h4{
         width: 80%;
         margin-left: 30px;
         border-bottom: 2px solid #9c9c9c;
+        p{ padding-bottom: 15px;}
     }
 }
 
@@ -98,31 +100,22 @@ h4{
 .sec04{
     background: #eee;
     text-align: center;
-    strong{
-        display: block;
-        padding:25px 0;
-    }
-    strong:first-child{
-        font-family: var(--mainFont);
-    }
-    .thumbnail{
-        overflow: hidden;
-        width: 170px;
-        height: 170px;
-        border-radius: 70%;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-    li{
+    ul{ flex-wrap: wrap;}
+    li{ 
+        width: 16%;
+        padding: 20px 15px;
+        strong:first-child{ font-family: var(--mainFont);}
         strong:last-child{ line-height: 3;}
-        p:last-child{ 
+        p{ 
             font-size: 0.9rem;
             line-height: 1.7;
         }
     }
+    strong{
+        display: block;
+        padding:25px 0;
+    }
+    img{ width: 85%;}
 }
 
 /* sec05 */
@@ -133,6 +126,7 @@ h4{
     }
     ul{ 
         flex-wrap: wrap;
+        flex-wrap: wrap;
         justify-content: space-evenly;
     }
     li{
@@ -142,11 +136,11 @@ h4{
     }
     P{ 
         background: #adccf7;
+        font-weight: 600;
+        font-size: 1.1rem;
         font-family: var(--mainFont);
         line-height: 2.5;
-        font-weight: 600;
         letter-spacing: 1px;
-        font-size: 1.1rem;
     }
     .thumbnail{
         height: 250px;
@@ -158,3 +152,45 @@ h4{
     }
 }
 
+
+@media screen and (max-width: 960px){
+    .sec03{
+        li br{ display: none;}
+    }
+}
+
+@media screen and (max-width: 760px){
+    .sec02{
+        li{ 
+            width: 30%;
+            br{ display: none;}
+        }
+        img{width: 70%;}
+    }
+    .sec04{
+        ul{ justify-content: space-around;}
+        li{ width: 45%;}
+    }
+    .sec05{
+        li p:first-child{ font-size: 0.9rem;}
+    }
+}
+
+@media screen and (max-width: 480px){
+    .sec02{
+        .intro{
+            width: 85%;
+            p{ font-size: 1.4rem;}
+        }
+        h4+p{ width: 85%;}
+        li{ 
+            width: 30%;
+            br{ display: none;}
+        }
+        img{width: 70%;}
+    }
+    .sec05{
+        li{ width: 100%;}
+        .thumbnail{ height: 200px;}
+    }
+}

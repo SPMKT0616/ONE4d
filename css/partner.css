@@ -29,6 +29,7 @@ h3 {
   margin: 80px 0;
   font-size: 1.8rem;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 h4 {
@@ -81,11 +82,11 @@ h4 {
 }
 
 .sec02 li {
-  width: 25%;
+  width: 28%;
+  padding: 30px 15px;
   background: #e1ebf7;
-  text-align: center;
-  padding: 30px 0;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .sec02 li p {
@@ -145,10 +146,37 @@ h4 {
   border-bottom: 2px solid #9c9c9c;
 }
 
+.sec03 .text_wrap p {
+  padding-bottom: 15px;
+}
+
 /* sec04 */
 .sec04 {
   background: #eee;
   text-align: center;
+}
+
+.sec04 ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sec04 li {
+  width: 16%;
+  padding: 20px 15px;
+}
+
+.sec04 li strong:first-child {
+  font-family: var(--mainFont);
+}
+
+.sec04 li strong:last-child {
+  line-height: 3;
+}
+
+.sec04 li p {
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
 .sec04 strong {
@@ -156,31 +184,8 @@ h4 {
   padding: 25px 0;
 }
 
-.sec04 strong:first-child {
-  font-family: var(--mainFont);
-}
-
-.sec04 .thumbnail {
-  overflow: hidden;
-  width: 170px;
-  height: 170px;
-  border-radius: 70%;
-}
-
-.sec04 .thumbnail img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.sec04 li strong:last-child {
-  line-height: 3;
-}
-
-.sec04 li p:last-child {
-  font-size: 0.9rem;
-  line-height: 1.7;
+.sec04 img {
+  width: 85%;
 }
 
 /* sec05 */
@@ -192,6 +197,7 @@ h4 {
 .sec05 ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -205,11 +211,11 @@ h4 {
 
 .sec05 P {
   background: #adccf7;
+  font-weight: 600;
+  font-size: 1.1rem;
   font-family: var(--mainFont);
   line-height: 2.5;
-  font-weight: 600;
   letter-spacing: 1px;
-  font-size: 1.1rem;
 }
 
 .sec05 .thumbnail {
@@ -221,5 +227,60 @@ h4 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .sec03 li br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .sec02 li {
+    width: 30%;
+  }
+  .sec02 li br {
+    display: none;
+  }
+  .sec02 img {
+    width: 70%;
+  }
+  .sec04 ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .sec04 li {
+    width: 45%;
+  }
+  .sec05 li p:first-child {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sec02 .intro {
+    width: 85%;
+  }
+  .sec02 .intro p {
+    font-size: 1.4rem;
+  }
+  .sec02 h4 + p {
+    width: 85%;
+  }
+  .sec02 li {
+    width: 30%;
+  }
+  .sec02 li br {
+    display: none;
+  }
+  .sec02 img {
+    width: 70%;
+  }
+  .sec05 li {
+    width: 100%;
+  }
+  .sec05 .thumbnail {
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=partner.css.map */
